@@ -1,0 +1,130 @@
+/* Footer */
+
+
+.footer {
+    background: #181716;
+    padding: 30px 0;
+}
+
+.footer_info_wrapper {
+    border-top: 1px solid #C5C6C6;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 33px;
+    margin-bottom: 95px;
+}
+
+.footer_initials_col_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 33px;
+}
+
+.footer_initials_box {
+    margin-bottom: 20px;
+}
+
+.footer_initials_name {
+    color: #F6F6F6;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.footer_social_box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.footer_social>svg>rect {
+    stroke: #C5C6C6;
+    transition: all ease .1s;
+}
+
+.footer_social>svg>path {
+    fill: #C5C6C6;
+    transition: all ease .1s;
+}
+
+.footer_social:hover>svg>rect {
+    stroke: #E40C25;
+}
+
+.footer_social:hover>svg>path {
+    fill: #E40C25;
+}
+
+.footer_info_name {
+    white-space: nowrap;
+    color: #F6F6F6;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer_info_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_info_nav_link {
+    font-size: 14px;
+    color: #C5C6C6;
+    line-height: 18px;
+}
+
+.footer_info_nav_link:hover {
+    color: #E40C25;
+}
+
+.footer_license {
+    text-align: center;
+    color: #F6F6F6;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+@media (max-width:1400px) {
+    .footer_info_wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:991px) {
+    .footer_initials_col_wrapper {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 25px;
+    }
+
+    .footer_info_name {
+        white-space: initial;
+        color: #F6F6F6;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer_info_order-3 {
+        margin-top: -60px;
+    }
+
+    .footer_info_order-5 {
+        margin-top: -125px;
+    }
+
+}
+
+@media (max-width:424px) {
+
+    .footer_info_order-5 {
+        margin-top: -100px;
+    }
+}
+
+/* END Footer */
