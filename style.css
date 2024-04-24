@@ -219,6 +219,35 @@
     margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+    .global_banner_info_box {
+        width: 100%;
+        height: 100%;
+        position: initial;
+    }
+
+    .global_banner_wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section_global_banner {
+        margin-bottom: 100px;
+    }
+
+    .banner_text {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .banner_text>br {
+        display: contents;
+    }
+}
+
 /* END Global banner */
 
 
@@ -302,6 +331,22 @@
     transition: all ease .3s;
 }
 
+@media (max-width: 1200px) {
+    .site_tiles_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .site_tiles_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .section_site_tiles {
+        margin-bottom: 90px;
+    }
+}
+
 /* END Глобальна сітка плиток */
 
 
@@ -355,6 +400,18 @@
 .site_family_link {
     color: #181716;
     font-size: 16px;
+}
+
+@media (max-width: 991px) {
+    .site_family_wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .site_family_box {
+        max-width: 100%;
+    }
 }
 
 /* END Family block */
@@ -412,6 +469,32 @@
     font-size: 20px;
     font-weight: 350;
     line-height: 24px;
+}
+
+@media (max-width: 768px) {
+    .expression_text {
+        color: #333;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .expression_wrapper::after {
+        content: "";
+        width: 100px;
+        height: 100px;
+        top: -95px;
+        left: 0;
+
+    }
+
+    .expression_wrapper::before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        bottom: -20px;
+        right: 0;
+
+    }
 }
 
 /* END Цитата вірша */
