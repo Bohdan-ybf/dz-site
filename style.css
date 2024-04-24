@@ -82,3 +82,336 @@
 ._lock {
     overflow: hidden;
 }
+
+.site_btn {
+    width: 100%;
+    max-width: 305px;
+    height: 50px;
+    color: #E40C25;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    border: 1px solid #E40C25;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease .2s;
+    border-radius: 4px;
+}
+
+.site_btn:hover {
+    color: #fff;
+    background-color: #E40C25;
+    transition: all ease .2s;
+}
+
+.site_tiles_btn {
+    margin: 50px auto 0;
+}
+
+/* Анімація для сайту */
+.element-animation {
+    opacity: 0;
+    transition: all ease 1s;
+    padding-top: 50px;
+
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all ease 1s;
+    padding-top: 0;
+}
+
+/* END Анімація для сайту */
+
+/* Global banner */
+
+.section_global_banner {
+    margin-bottom: 100px;
+}
+
+.global_banner_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+
+}
+
+
+.global_banner_info_box {
+    position: absolute;
+    left: 0;
+    background: #FFF;
+    box-shadow: 0px 12px 200px 0px rgba(0, 0, 0, 0.08);
+    width: 480px;
+    height: 281px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+    z-index: 5;
+}
+
+.banner_info_title {
+    color: #E40C25;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.banner_text {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.banner_bottom_text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 20px;
+}
+
+.global_banner_img {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.global_banner_arrow {
+    position: relative;
+}
+
+.global_banner_arrow::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    border-radius: 2px;
+    background: #E40C25;
+    bottom: -25px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    transition: all ease 1.3s;
+}
+
+.global_banner_arrow.active::before {
+    height: 60px;
+    bottom: -40px;
+    transition: all ease 1.3s;
+}
+
+
+.global_banner_text {
+    width: 100%;
+    max-width: 844px;
+    color: #181716;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+}
+
+/* END Global banner */
+
+
+/* Глобальна сітка плиток */
+
+.section_site_tiles {
+    margin-bottom: 140px;
+}
+
+.site_tiles_header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tiles_header_title {
+    color: #E40C25;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.tiles_header_sub_title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.site_tiles_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.tiles_img_wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.tiles_img {
+    width: 100%;
+}
+
+.tiles_img_name {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    color: #E40C25;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.tiles_data {
+    color: #9C9C9C;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.tiles_text {
+    color: #181716;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 24px;
+    height: 73px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-bottom: 1px solid transparent;
+    transition: all ease .3s;
+}
+
+.site_tiles_box:hover>.tiles_text {
+    color: #E40C25;
+    border-bottom: 1px solid #E40C25;
+    transition: all ease .3s;
+}
+
+/* END Глобальна сітка плиток */
+
+
+/* Family block */
+.section_site_family {
+    padding-bottom: 60px;
+    margin-bottom: 175px;
+}
+
+.site_family-background {
+    background: linear-gradient(180deg, rgba(246, 246, 246, 0.00) 2%, #F6F6F6 31%, #F6F6F6 71.5%, #F6F6F6 97%);
+}
+
+.site_family_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.site_family_box {
+    width: 100%;
+    max-width: 413px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.site_family_name {
+    color: #181716;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.site_family_position {
+    color: #333;
+    font-size: 16px;
+    font-weight: 350;
+}
+
+.site_family_text {
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.site_family_link {
+    color: #181716;
+    font-size: 16px;
+}
+
+/* END Family block */
+
+
+/* Цитата вірша */
+.section_expression {
+    margin-bottom: 100px;
+}
+
+.expression_wrapper {
+    position: relative;
+}
+
+.expression_wrapper::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    top: -65px;
+    left: 0;
+    position: absolute;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zOS4xNjY1IDE0Ny41QzMwLjgzMzIgMTM4LjMzMyAyNS44MzMyIDEyOC4zMzMgMjUuODMzMiAxMTEuNjY3QzI1LjgzMzIgODIuNSA0Ni42NjY1IDU2LjY2NjcgNzUuODMzMiA0My4zMzMzTDgzLjMzMzIgNTQuMTY2N0M1NS44MzMyIDY5LjE2NjcgNDkuOTk5OCA4OC4zMzMzIDQ4LjMzMzIgMTAwLjgzM0M1Mi40OTk4IDk4LjMzMzMgNTguMzMzMiA5Ny41IDY0LjE2NjUgOTguMzMzM0M3OS4xNjY1IDEwMCA5MC44MzMyIDExMS42NjcgOTAuODMzMiAxMjcuNUM5MC44MzMyIDEzNSA4Ny40OTk4IDE0Mi41IDgyLjQ5OTggMTQ4LjMzM0M3Ni42NjY1IDE1NC4xNjcgNjkuOTk5OCAxNTYuNjY3IDYxLjY2NjUgMTU2LjY2N0M1Mi40OTk4IDE1Ni42NjcgNDQuMTY2NSAxNTIuNSAzOS4xNjY1IDE0Ny41Wk0xMjIuNSAxNDcuNUMxMTQuMTY3IDEzOC4zMzMgMTA5LjE2NyAxMjguMzMzIDEwOS4xNjcgMTExLjY2N0MxMDkuMTY3IDgyLjUgMTMwIDU2LjY2NjcgMTU5LjE2NyA0My4zMzMzTDE2Ni42NjcgNTQuMTY2N0MxMzkuMTY3IDY5LjE2NjcgMTMzLjMzMyA4OC4zMzMzIDEzMS42NjcgMTAwLjgzM0MxMzUuODMzIDk4LjMzMzMgMTQxLjY2NyA5Ny41IDE0Ny41IDk4LjMzMzNDMTYyLjUgMTAwIDE3NC4xNjcgMTEyLjUgMTc0LjE2NyAxMjcuNUMxNzQuMTY3IDEzNSAxNzAuODMzIDE0Mi41IDE2NS44MzMgMTQ4LjMzM0MxNjAgMTU0LjE2NyAxNTMuMzMzIDE1Ni42NjcgMTQ1IDE1Ni42NjdDMTM1LjgzMyAxNTYuNjY3IDEyNy41IDE1Mi41IDEyMi41IDE0Ny41WiIgZmlsbD0iI0M1QzZDNiIgZmlsbC1vcGFjaXR5PSIwLjIyIi8+Cjwvc3ZnPgo=);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.expression_wrapper::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    bottom: -20px;
+    right: 0;
+    position: absolute;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xNjAuODMzIDUyLjVDMTY5LjE2NyA2MS42NjY3IDE3NC4xNjcgNzEuNjY2NyAxNzQuMTY3IDg4LjMzMzRDMTc0LjE2NyAxMTcuNSAxNTMuMzMzIDE0My4zMzMgMTI0LjE2NyAxNTYuNjY3TDExNi42NjcgMTQ1LjgzM0MxNDQuMTY3IDEzMC44MzMgMTUwIDExMS42NjcgMTUxLjY2NyA5OS4xNjY3QzE0Ny41IDEwMS42NjcgMTQxLjY2NyAxMDIuNSAxMzUuODMzIDEwMS42NjdDMTIwLjgzMyAxMDAgMTA5LjE2NyA4OC4zMzM0IDEwOS4xNjcgNzIuNUMxMDkuMTY3IDY1IDExMi41IDU3LjUgMTE3LjUgNTEuNjY2N0MxMjMuMzMzIDQ1LjgzMzQgMTMwIDQzLjMzMzQgMTM4LjMzMyA0My4zMzM0QzE0Ny41IDQzLjMzMzQgMTU1LjgzMyA0Ny41IDE2MC44MzMgNTIuNVpNNzcuNTAwMiA1Mi41Qzg1LjgzMzUgNjEuNjY2NyA5MC44MzM1IDcxLjY2NjcgOTAuODMzNSA4OC4zMzM0QzkwLjgzMzUgMTE3LjUgNzAuMDAwMiAxNDMuMzMzIDQwLjgzMzUgMTU2LjY2N0wzMy4zMzM1IDE0NS44MzNDNjAuODMzNSAxMzAuODMzIDY2LjY2NjggMTExLjY2NyA2OC4zMzM1IDk5LjE2NjdDNjQuMTY2OCAxMDEuNjY3IDU4LjMzMzUgMTAyLjUgNTIuNTAwMiAxMDEuNjY3QzM3LjUwMDIgMTAwIDI1LjgzMzUgODcuNSAyNS44MzM1IDcyLjVDMjUuODMzNSA2NSAyOS4xNjY4IDU3LjUgMzQuMTY2OCA1MS42NjY3QzQwLjAwMDIgNDUuODMzNCA0Ni42NjY4IDQzLjMzMzQgNTUuMDAwMiA0My4zMzM0QzY0LjE2NjggNDMuMzMzNCA3Mi41MDAyIDQ3LjUgNzcuNTAwMiA1Mi41WiIgZmlsbD0iI0M1QzZDNiIgZmlsbC1vcGFjaXR5PSIwLjIyIi8+Cjwvc3ZnPgo=);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.expression_text {
+    color: #333;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0 auto 35px;
+}
+
+.expression_sub_text {
+    color: #333;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 24px;
+}
+
+/* END Цитата вірша */
