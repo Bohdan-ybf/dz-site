@@ -1,3 +1,20 @@
+// Header
+$('.nav__mobile__menu').click(function(e) {
+    document.body.classList.toggle("_lock");
+    $('.nav__mobile__menu').toggleClass('active-menu');
+    $('.nav__wrapper').toggleClass('active-menu');
+  });
+
+  $('.header__dropdown__menu').click(function() {
+      removeSelected(this);
+      $(this).toggleClass('active');
+  });
+
+  function removeSelected(el) {
+      $('.active').not(el).removeClass('active');
+  }
+// ==================================================
+
 // Ефект плавного прояву блоків на сайті
 function onEntry(entry) {
     entry.forEach(change => {

@@ -402,6 +402,10 @@
     font-size: 16px;
 }
 
+.site_family_link:hover {
+    color: #E40C25;
+}
+
 @media (max-width: 991px) {
     .site_family_wrapper {
         flex-wrap: wrap;
